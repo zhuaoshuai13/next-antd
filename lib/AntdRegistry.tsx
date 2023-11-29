@@ -1,25 +1,30 @@
-'use client';
+"use client"
 
-import React from 'react';
-// import { createCache, extractStyle, StyleProvider } from '@ant-design/cssinjs';
-// 如果您使用的是 Next.js 14，请改用下面的导入。更多信息： https://github.com/ant-design/ant-design/issues/45567
-import {
-  createCache,
-  extractStyle,
-  StyleProvider,
-} from '@ant-design/cssinjs/lib';
-import type Entity from '@ant-design/cssinjs/es/Cache';
-import { useServerInsertedHTML } from 'next/navigation';
+import React from "react"
 
-const StyledComponentsRegistry = ({ children }: React.PropsWithChildren) => {
-  const cache = React.useMemo<Entity>(() => createCache(), []);
-  useServerInsertedHTML(() => (
-    <style
-      id='antd'
-      dangerouslySetInnerHTML={{ __html: extractStyle(cache, true) }}
-    />
-  ));
-  return <StyleProvider cache={cache}>{children}</StyleProvider>;
-};
+import { createCache, extractStyle, StyleProvider } from "@ant-design/cssinjs"
+import type Entity from "@ant-design/cssinjs/es/Cache"
+import { useServerInsertedHTML } from "next/navigation"
 
-export default StyledComponentsRegistry;
+const StyledComponentsRegistry = ({
+  children,
+}: React.PropsWithChildren): JSX.Element => {
+  const cache = React.useMemo<Entity>(() => createCache(), [])
+  const isServerInserted = React.useRef<boolean>(false)
+  useServerInsertedHTML((): JSX.Element | null => {
+    // avoid duplicate css insert
+    if (isServerInserted.current) {
+      return null
+    }
+    isServerInserted.current = true
+    return (
+      <style
+        id='antd'
+        dangerouslySetInnerHTML={{ __html: extractStyle(cache, true) }}
+      />
+    )
+  })
+  return <StyleProvider cache={cache}>{children}</StyleProvider>
+}
+
+export default StyledComponentsRegistry

@@ -1,0 +1,20 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: fit-content;
+  min-height: 300px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.account-login {
+  width: 80%;
+}
+
+.button {
+  width: 100%;
+}

@@ -1,0 +1,27 @@
+
+.phoneLogin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: fit-content;
+  min-height: 300px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.button {
+  width: 100%;
+  margin-top: 32px;
+}
+
+.phone-login {
+  width: 80%;
+}
+
+.get-code {
+  display: flex;
+  justify-content: center;
+}

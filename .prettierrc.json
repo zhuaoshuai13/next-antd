@@ -1,0 +1,8 @@
+{
+    "singleQuote": false,
+    "semi": false,
+    "quoteProps": "consistent",
+    "jsxSingleQuote": true,
+    "requirePragma": true,
+    "insertPragma": true
+}

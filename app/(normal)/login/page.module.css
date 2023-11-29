@@ -1,0 +1,24 @@
+.login {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f3f4f6;
+}
+
+.login-wrapper {
+  width: 40%;
+  margin-top: -15%;
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 3px 10px 29px 14px rgb(0 0 0 / .1),0 10px 15px -3px rgb(0 0 0 / .1);
+}
+
+.title {
+  font-weight: 600;
+  font-size: 20px;
+}

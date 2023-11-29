@@ -1,0 +1,29 @@
+{
+    "extends": [
+      "stylelint-config-standard-scss",
+      "stylelint-config-rational-order"
+    ],
+    "rules": {
+      "declaration-block-no-redundant-longhand-properties": null,
+      "alpha-value-notation": "number",
+      "no-descending-specificity": null,
+      "selector-class-pattern": null,
+      "font-family-no-missing-generic-family-keyword": null,
+      "font-family-name-quotes": "always-unless-keyword",
+      "selector-pseudo-element-colon-notation": "single",
+      "declaration-colon-space-after": "always",
+      "block-opening-brace-space-before": "always",
+      "color-hex-case": "lower",
+      "at-rule-empty-line-before": "always",
+      "max-empty-lines": 1,
+      "declaration-block-trailing-semicolon": "always",
+      "length-zero-no-unit": true,
+      "number-leading-zero": "never",
+      "block-closing-brace-empty-line-before": "never",
+      "block-closing-brace-newline-after": "always-multi-line",
+      "indentation": 2,
+      "color-function-notation": "modern",
+      "selector-pseudo-class-no-unknown": null
+    }
+  }
+  

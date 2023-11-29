@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+pnpm lint-staged
+
+# 添加对构建的检查
+# npm run build 
+build_output=$(pnpm build)
+
+# 检查输出中是否包含警告信息
+if echo "$build_output" | grep -qi ' Warning: '; then
+  echo "Build has warnings. Please fix them before commit."
+  exit 1
+fi
+
+# 检查构建退出码  
+if [ $? -ne 0 ]; then
+  echo "Build failed, can't commit!" 
+  exit 1
+fi
