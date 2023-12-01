@@ -1,0 +1,40 @@
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: 100%;
+}
+
+.head {
+  display: flex;
+  gap: 8%;
+  padding: 25px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.infoLine {
+  display: flex;
+  gap: 5px;
+}
+
+.title {
+  color: #86909c;
+}
+
+.info {
+  color: #1d2129;
+}
+
+.bottom {
+  flex: 1;
+  padding: 24px;
+  background: #fff;
+  border-radius: 4px;
+}
