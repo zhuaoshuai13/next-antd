@@ -3,3 +3,6 @@ export { default as AccountLoginForm } from "./accountLoginForm/accountLoginForm
 export { default as PhoneLoginForm } from "./phoneLoginForm/phoneLoginForm"
 export { default as UserBasicInfo } from "./userBasicInfo/userBasicInfo"
 export { default as UserSecuritySetting } from "./userSecuritySetting/userSecuritySetting"
+export { default as Avatar } from "./avatar/avatar"
+export { default as SearchTable } from "./searchTable/searchTable"
+export { default as TableAction } from "./tableAction/tableAction"

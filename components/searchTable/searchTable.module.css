@@ -1,0 +1,54 @@
+.searchTable {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e3e0e0;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.searchGropu {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.inputGroup {
+  display: grid;
+  flex: 1;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.inputGroup label {
+  display: inline-block !important;
+  min-width: 100px;
+  line-height: 32px;
+  text-align: justify !important;
+  text-align-last: justify !important;
+  text-justify: distribute-all-lines !important;
+}
+
+.inputGroup label:after {
+  content: "" !important;
+}
+
+.line {
+  width: 2px;
+  background: #e3e0e0;
+}
+
+.btnGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: fit-content;
+}
+
+.btn {
+  margin-bottom: 20px;
+}

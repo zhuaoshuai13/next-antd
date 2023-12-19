@@ -1,0 +1,10 @@
+.btn {
+  display: flex;
+  gap: 5px;
+}
+
+.text {
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
+}

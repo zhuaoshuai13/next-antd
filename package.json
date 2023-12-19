@@ -21,11 +21,11 @@
     ]
   },
   "dependencies": {
-    "@ant-design/cssinjs": "1.17.2",
+    "@ant-design/cssinjs": "1.18.1",
     "@ant-design/icons": "^5.2.6",
     "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^17.6.6",
-    "antd": "^5.11.1",
+    "antd": "^5.12.1",
     "eslint-config-custom": "^0.0.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.3",

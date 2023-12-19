@@ -1,13 +1,15 @@
-import { Button, ConfigProvider } from "antd"
+// import { Button } from "antd"
 
-import theme from "@/theme/themeConfig"
+// export default function Home(): React.ReactNode {
+//   return (
+//     <div className='App'>
+//       <Button type='primary'>Button</Button>
 
-export default function Home(): React.ReactNode {
-  return (
-    <ConfigProvider theme={theme}>
-      <div className='App'>
-        <Button type='primary'>Button</Button>
-      </div>
-    </ConfigProvider>
-  )
+//       <div>aaaaaa</div>
+//     </div>
+//   )
+// }
+const page = (): JSX.Element => {
+  return <div>page</div>
 }
+export default page

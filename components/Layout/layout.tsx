@@ -3,6 +3,7 @@ import React from "react"
 
 import { Layout, Menu } from "antd"
 
+import { Avatar } from "@/components"
 import useLayout from "@/hooks/useLayout"
 
 import styled from "./layout.module.css"
@@ -17,27 +18,11 @@ const DashBoardLayout = ({
   const { item, clickMenu } = useLayout()
   return (
     <Layout style={{ height: "100vh" }}>
-      <Header
-        style={{
-          position: "sticky",
-          top: 0,
-          zIndex: 1,
-          width: "100%",
-          display: "flex",
-          alignItems: "center",
-        }}
-      />
+      <Header className={styled.header}>
+        <Avatar />
+      </Header>
       <Layout>
-        <Sider
-          style={{
-            overflow: "auto",
-            height: "100%",
-            paddingTop: "64px",
-            position: "fixed",
-            left: 0,
-            bottom: 0,
-          }}
-        >
+        <Sider className={styled.slider}>
           <Menu
             theme='dark'
             mode='inline'

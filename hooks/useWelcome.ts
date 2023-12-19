@@ -73,7 +73,7 @@ const useWelcome = (): {
       const data = await authApi.usePostCurrentComPany(params)
       return data
     },
-    []
+    [],
   )
 
   // 获取公司数据

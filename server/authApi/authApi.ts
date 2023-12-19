@@ -14,7 +14,7 @@ export const useLogin = async (params: LoginParams): Promise<LoginResponse> => {
   const response = await useClientRequest<LoginParams, LoginResponse>(
     "/api/auth/login",
     "POST",
-    params
+    params,
   )
   return response
 }
@@ -23,7 +23,7 @@ export const useLogin = async (params: LoginParams): Promise<LoginResponse> => {
 export const useGetAsyncRoutes = async (): Promise<GetAsyncRoutesResponse> => {
   const response = await useClientRequest<null, GetAsyncRoutesResponse>(
     "/api/auth/asyncRoutes",
-    "GET"
+    "GET",
   )
   return response
 }
@@ -33,14 +33,14 @@ export const useGetCurrentComPany =
   async (): Promise<currentCompanyResponse> => {
     const response = await useClientRequest<null, currentCompanyResponse>(
       "/api/auth/currentCompany",
-      "GET"
+      "GET",
     )
     return response
   }
 
 //选择公司
 export const usePostCurrentComPany = async (
-  params: PostCurrentComPanyParams
+  params: PostCurrentComPanyParams,
 ): Promise<GetCurrentComPanyParamsResponse> => {
   const response = await useClientRequest<
     PostCurrentComPanyParams,

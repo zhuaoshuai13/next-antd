@@ -1,8 +1,8 @@
 {
     // eslint,stylelint保存时自动格式化
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true,
-      "source.fixAll.stylelint": true
+      "source.fixAll.eslint": "explicit",
+      "source.fixAll.stylelint": "explicit"
     },
     // stylelint作用范围
     "stylelint.validate": ["postcss", "scss", "sass", "css"],
